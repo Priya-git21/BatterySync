@@ -28,7 +28,7 @@ const Working = () => {
 
     return (
         <section id="how-it-works" className={`how-it-works ${isVisible ? "visible" : ""}`} ref={workingRef}>
-            <h2>How It Works</h2>
+            <h2>HOW IT WORKS</h2>
             <div className="timeline">
                 <div className="timeline-item">
                     <div className="timeline-icon">

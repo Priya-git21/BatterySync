@@ -90,8 +90,17 @@ export const updatePass_validationSchema = Yup.object({
         .required("Password is required"),
 });
 
+const token = localStorage.getItem('token');
+
+export const logout = () => {
+    localStorage.removeItem(token);
+};
+
+export const getToken = () => {
+    return localStorage.getItem(token);
+};
+
 export const isLoggedIn = () => {
-    const token = localStorage.getItem('token');
     if (!token)
         return false;
 

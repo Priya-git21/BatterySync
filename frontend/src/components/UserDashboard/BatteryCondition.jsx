@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { PieChart, pieArcLabelClasses } from '@mui/x-charts';
 import { fetchRULDataFromLocalStorage, getBatteryColor, getBatteryConditionText } from '../../lib/server_actions/utils';
 import BatteryChart from './BatteryChart';
 import BatteryDataTable from './BatteryDataTable';

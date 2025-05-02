@@ -167,7 +167,7 @@
 }
 
 .card-front {
-    background: linear-gradient(135deg, #002916, #07bc7f);
+    background: linear-gradient(135deg, #00361d, #1effb4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +180,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #4d7a4e, #4cd964);
+    background: linear-gradient(135deg, #77ff77, #0a781c);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,7 @@
 }
 
 .card-back {
-    background: linear-gradient(135deg, #00542d, #002916);
+    background: linear-gradient(135deg, #006837, #003c20);
     color: #ffffff;
     padding: 1.5rem;
     transform: rotateY(180deg);
@@ -236,11 +236,11 @@
 
     0%,
     100% {
-        box-shadow: 0 0 10px rgba(16, 96, 25, 0.8), 0 0 20px rgba(0, 99, 3, 0.8);
+        box-shadow: 0 0 10px rgba(17, 115, 29, 0.8), 0 0 20px rgba(17, 115, 29, 0.8);
     }
 
     50% {
-        box-shadow: 0 0 20px #07bc0c, 0 0 40px #005103;
+        box-shadow: 0 0 20px #4bd650, 0 0 40px #4bd650;
     }
 }
 
@@ -257,6 +257,12 @@
 .how-it-works.visible {
     opacity: 1;
     transform: translateY(0) scale(1);
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
 }
 
 .timeline {
@@ -342,6 +348,12 @@
 .pricing.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
 }
 
 /* Pricing Tiers Container */

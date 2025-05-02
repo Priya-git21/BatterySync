@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/BatterySync.png";
 import "./Navbar.css";
 import { isLoggedIn } from "../../lib/server_actions/utils";
@@ -7,7 +7,6 @@ import { isLoggedIn } from "../../lib/server_actions/utils";
 const Navbar = () => {
     const [activeItem, setActiveItem] = useState("home");
     const [loggedIn, setLoggedIn] = useState(false);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const isUserLoggedIn = isLoggedIn();
@@ -114,6 +113,15 @@ const Navbar = () => {
                                 <Link to="/profile">
                                     <span className="icon"><ion-icon name="person-circle" /></span>
                                     <span className="text">Profile</span>
+                                </Link>
+                            </li>
+                            <li
+                                className={`list ${activeItem === "logout" ? "active" : ""}`}
+                                onClick={() => handleNavClick("logout")}
+                            >
+                                <Link to="/logout">
+                                    <span className="icon"><ion-icon name="log-out" /></span>
+                                    <span className="text">Logout</span>
                                 </Link>
                             </li>
                         </>
