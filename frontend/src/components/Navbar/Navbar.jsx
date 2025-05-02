@@ -64,7 +64,7 @@ const Navbar = () => {
                             <span className="text">Dashboard</span>
                         </Link>
                     </li>
-                    <li
+                    {/* <li
                         className={`list ${activeItem === "tripplanner" ? "active" : ""}`}
                         onClick={() => handleNavClick("tripplanner")}
                     >
@@ -72,7 +72,7 @@ const Navbar = () => {
                             <span className="icon"><ion-icon name="location" /></span>
                             <span className="text">Trip Planner</span>
                         </Link>
-                    </li>
+                    </li> */}
                     <li
                         className={`list ${activeItem === "chargingstation" ? "active" : ""}`}
                         onClick={() => handleNavClick("chargingstation")}

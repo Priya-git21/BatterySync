@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const userRoutes = require('./routes/user');
-const getConnection = require('./utils/getConnection');
+const getConnection = require('./utils/getConnection'); 
 
 // .env files
 require('dotenv').config();
